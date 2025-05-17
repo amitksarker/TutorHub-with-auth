@@ -72,7 +72,7 @@ const router = createBrowserRouter([
       {
         path: 'UpdateTutorials/:id',
         element: <UpdateTutorials />,
-        loader: ({params}) => fetch(`http://localhost:3000/tutorials/${params.id}`)
+        loader: ({params}) => fetch(`https://tutor-hub-server-xi.vercel.app/tutorials/${params.id}`)
       },
       {
         path: 'MyBookedTutor',

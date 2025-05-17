@@ -10,11 +10,11 @@ const MyTutorials = () => {
   const userEmail = "john@example.com";
 
   useEffect(() => {
-    // fetch(`http://localhost:3000/tutorials?email=${userEmail}`)
+    // fetch(`https://tutor-hub-server-xi.vercel.app/tutorials?email=${userEmail}`)
     //   .then(res => res.json())
     //   .then(data => setTutorials(data))
 
-    axios.get(`http://localhost:3000/tutorials?email=${userEmail}`, { withCredentials: true })
+    axios.get(`https://tutor-hub-server-xi.vercel.app/tutorials?email=${userEmail}`, { withCredentials: true })
     // .then(res => console.log(setTutorials(res.data)))
      .then(res => {
       setTutorials(res.data);
@@ -27,7 +27,7 @@ const MyTutorials = () => {
 
 // useEffect(() => {
 //   // প্রথমে টোকেন নিবো
-//   axios.post('http://localhost:3000/jwt', 
+//   axios.post('https://tutor-hub-server-xi.vercel.app/jwt', 
 //     { email: userEmail },
 //     { withCredentials: true }
 //   )
@@ -35,7 +35,7 @@ const MyTutorials = () => {
 //     const token = res.data.token;  // টোকেন ধরলাম
 
 //     // এখন টোকেন দিয়ে tutorial আনবো
-//     axios.get(`http://localhost:3000/tutorials?email=${userEmail}`, {
+//     axios.get(`https://tutor-hub-server-xi.vercel.app/tutorials?email=${userEmail}`, {
 //       headers: {
 //         Authorization: `Bearer ${token}`
 //       },
@@ -60,7 +60,7 @@ const MyTutorials = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/tutorials/${_id}`, {
+        fetch(`https://tutor-hub-server-xi.vercel.app/tutorials/${_id}`, {
           method: 'DELETE',
         })
         .then(res => res.json())

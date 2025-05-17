@@ -8,7 +8,7 @@ const TutorDetails = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/tutorials/${details}`)
+    fetch(`https://tutor-hub-server-xi.vercel.app/tutorials/${details}`)
 
       .then(res => res.json())
       .then(data => setTutor(data))
@@ -25,7 +25,7 @@ const TutorDetails = () => {
       email: user?.email, // in case user is null
     };
 
-    fetch('http://localhost:3000/bookings', {
+    fetch('https://tutor-hub-server-xi.vercel.app/bookings', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(bookingInfo),

@@ -21,7 +21,7 @@ const UpdateTutorials = () => {
       review 
     };
 
-    fetch(`http://localhost:3000/tutorials/${_id}`, {
+    fetch(`https://tutor-hub-server-xi.vercel.app/tutorials/${_id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

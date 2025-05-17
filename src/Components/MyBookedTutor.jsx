@@ -6,13 +6,13 @@ const MyBookedTutors = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/bookings?email=${user?.email}`)
+    fetch(`https://tutor-hub-server-xi.vercel.app/bookings?email=${user?.email}`)
       .then(res => res.json())
       .then(data => setBookings(data));
   }, [user]);
 
   const handleReview = (tutorId) => {
-    fetch(`http://localhost:3000/tutorials/review/${tutorId}`, {
+    fetch(`https://tutor-hub-server-xi.vercel.app/tutorials/review/${tutorId}`, {
       method: 'PATCH',
     })
       .then(res => res.json())

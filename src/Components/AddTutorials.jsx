@@ -37,7 +37,7 @@ const AddTutorials = () => {
     }
     // console.log(name, email, imageURL, language, price, description, review);
   
-    fetch('http://localhost:3000/tutorials', {
+    fetch('https://tutor-hub-server-xi.vercel.app/tutorials', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

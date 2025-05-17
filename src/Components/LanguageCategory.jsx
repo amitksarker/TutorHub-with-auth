@@ -17,7 +17,7 @@ const LanguageCategory = () => {
     // const [languages, setLanguages] = useState([]);
 
     // useEffect( () => {
-    //     fetch('http://localhost:3000/categories')
+    //     fetch('https://tutor-hub-server-xi.vercel.app/categories')
     //     .then(res => res.json())
     //     .then(data => setLanguages(data))
     // },[]);

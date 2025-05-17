@@ -17,7 +17,7 @@
 //             const email = result.user.email;
 //             console.log('sign in',email);
 //             const user = { email: email };
-//             axios.post('http://localhost:3000/jwt', user, {
+//             axios.post('https://tutor-hub-server-xi.vercel.app/jwt', user, {
 //                 withCredentials: true 
 //             })
 //             .then(data =>{
@@ -43,7 +43,7 @@
 //             // console.log('sign in',email);
 //             const user = { email: result.user.email };
 //             console.log('sign in',user);
-//             axios.post('http://localhost:3000/jwt', user, {
+//             axios.post('https://tutor-hub-server-xi.vercel.app/jwt', user, {
 //                 withCredentials:true
 //             })
 //             .then(res =>{
@@ -110,7 +110,7 @@ const Login = () => {
       const email = result.user.email;
 
       const user = { email };
-      await axios.post('http://localhost:3000/jwt', user, {
+      await axios.post('https://tutor-hub-server-xi.vercel.app/jwt', user, {
         withCredentials: true,
       });
 
@@ -132,7 +132,7 @@ const Login = () => {
       const result = await signInUser(email, password);
       const user = { email: result.user.email };
 
-      await axios.post('http://localhost:3000/jwt', user, {
+      await axios.post('https://tutor-hub-server-xi.vercel.app/jwt', user, {
         withCredentials: true,
       });
 

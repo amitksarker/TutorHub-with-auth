@@ -7,7 +7,7 @@
 //     const navigate = useNavigate();
   
 //     // useEffect(() => {
-//     //   let url = 'http://localhost:3000/tutorials';
+//     //   let url = 'https://tutor-hub-server-xi.vercel.app/tutorials';
 //     //   if (language) {
 //     //     url += `?language=${language}`;
 //     //   }
@@ -23,7 +23,7 @@
 //     useEffect(() => {
 //     const userEmail = localStorage.getItem('email'); // ✅ Get user email from localStorage
 
-//     let url = 'http://localhost:3000/tutorials';
+//     let url = 'https://tutor-hub-server-xi.vercel.app/tutorials';
 //     const queryParams = [];
 
 //     if (language) queryParams.push(`language=${language}`);
@@ -51,7 +51,7 @@
 //     // useEffect(() => {
 //     //   const userEmail = localStorage.getItem('email'); // 🔁 Replace this with context value if you're using AuthContext
     
-//     //   let url = 'http://localhost:3000/tutorials';
+//     //   let url = 'https://tutor-hub-server-xi.vercel.app/tutorials';
 //     //   const queryParams = [];
     
 //     //   if (language) queryParams.push(`language=${language}`);
@@ -117,7 +117,7 @@ const FindTutors = () => {
   useEffect(() => {
     if (!user?.email) return; // ✅ wait until email is available
 
-    let url = 'http://localhost:3000/tutorials';
+    let url = 'https://tutor-hub-server-xi.vercel.app/tutorials';
     const queryParams = [];
 
     if (language) queryParams.push(`language=${language}`);

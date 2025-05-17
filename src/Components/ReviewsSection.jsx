@@ -4,7 +4,7 @@ const ReviewsSection = () => {
   const [tutorials, setTutorials] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/tutorials', {
+    fetch('https://tutor-hub-server-xi.vercel.app/tutorials', {
       credentials: 'include', // for cookies / JWT
     })
       .then((res) => res.json())
